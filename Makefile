@@ -6,17 +6,10 @@
 #
 
 CATEGORIES=	japanese www ruby
-.if defined(WITH_TDIARY_DEVEL)
-PKGNAMESUFFIX=	-devel
-.endif
 
 MAINTAINER=	tota@FreeBSD.org
 
 TDIARY_LANG=	ja
 MASTERDIR=	${.CURDIR}/../../www/tdiary
-
-.if defined(WITH_TDIARY_DEVEL)
-MASTERDIR=	${.CURDIR}/../../www/tdiary-devel
-.endif
 
 .include "${MASTERDIR}/Makefile"
